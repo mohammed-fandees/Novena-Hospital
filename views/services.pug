@@ -1,0 +1,21 @@
+include ./includes/mixins
+
+doctype html 
+html 
+  head 
+    include ./includes/head
+    link(rel="stylesheet", href="css/services.css")
+  body 
+    include ./includes/header
+    include ./includes/banner
+    section.service-1 
+      .container
+        +awardsAndServices("Child Care", "./imgs/service/service-1.jpg", false)
+        +awardsAndServices("Personal Care", "./imgs/service/service-2.jpg", false)
+        +awardsAndServices("CT scan", "./imgs/service/service-3.jpg", false)
+        +awardsAndServices("Joint replacement", "./imgs/service/service-4.jpg", false)
+        +awardsAndServices("Examination & Diagnosis", "./imgs/service/service-5.jpg", false)
+        +awardsAndServices("Alzheimer's disease", "./imgs/service/service-6.jpg", false)
+    +cta-page
+    include ./includes/footer
+    include ./includes/scripts

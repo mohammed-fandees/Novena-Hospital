@@ -1,0 +1,101 @@
+include ./includes/mixins
+
+doctype html 
+html 
+  head 
+    include ./includes/head
+    link(rel="stylesheet", href="css/doctors.css")
+  body 
+    include ./includes/header
+    include ./includes/banner
+    section.doctors 
+      .main-title 
+        h2.title-color Doctors 
+        .divider 
+        p We provide a wide range of creative services adipisicing elit. Autem maxime rem modi eaque, voluptate. Beatae officiis neque
+      .container 
+        .filteration
+          .control 
+            ul 
+              li(id="all", class="selected") All Departmets
+              li#cardiology Cardiology 
+              li#dental Dental 
+              li#neurology Neurology 
+              li#medicine Medicine 
+              li#pediatric Pediatric 
+              li#traumatology Traumatology
+          .box 
+            +doctor("Thomas Henry", "imgs/team/1.jpg", "Cardiology", "1")
+            +doctor("Harrision Samuel", "imgs/team/2.jpg", "Radiology", "2")
+            +doctor("Alexandar James", "imgs/team/3.jpg", "Dental", "3")
+            +doctor("Edward john", "imgs/team/4.jpg", "Pediatry", "4")
+            +doctor("Edward john", "imgs/team/7.jpg", "Neurology", "5")
+            +doctor("Edward john", "imgs/team/8.jpg", "Palmology", "6")
+            +doctor("Edward john", "imgs/team/1.jpg", "Pediatry", "4")
+            +doctor("Edward john", "imgs/team/2.jpg", "Radiology", "2")
+            +doctor("Edward john", "imgs/team/3.jpg", "Dental", "3")
+            +doctor("Edward john", "imgs/team/4.jpg", "Cardiology", "1")
+            +doctor("Edward john", "imgs/team/7.jpg", "Pediatry", "4")
+            .col
+
+    +cta-page
+    include ./includes/footer
+    include ./includes/scripts
+
+
+            //-     .col#1 
+            //-   .image: img(src="imgs/team/1.jpg", alt="Doctor")
+            //-   .text 
+            //-     h4: a(href="/doctors/doctor-details") Thomas Henry
+            //-     p Cardiology 
+            //- .col#1 
+            //-   .image: img(src="imgs/team/2.jpg", alt="Doctor")
+            //-   .text 
+            //-     h4: a(href="/doctors/doctor-details") Harrision Samuel
+            //-     p Radiology
+            //- .col#1 
+            //-   .image: img(src="imgs/team/3.jpg", alt="Doctor")
+            //-   .text 
+            //-     h4: a(href="/doctors/doctor-details") Alexandar James
+            //-     p Dental
+            //- .col#1 
+            //-   .image: img(src="imgs/team/4.jpg", alt="Doctor")
+            //-   .text 
+            //-     h4: a(href="/doctors/doctor-details") Edward john
+            //-     p Pediatry
+            //- .col#1 
+            //-   .image: img(src="imgs/team/1.jpg", alt="Doctor")
+            //-   .text 
+            //-     h4: a(href="/doctors/doctor-details") Thomas Henry
+            //-     p Neurology
+            //- .col#1 
+            //-   .image: img(src="imgs/team/2.jpg", alt="Doctor")
+            //-   .text 
+            //-     h4: a(href="/doctors/doctor-details") Henry samuel
+            //-     p Palmology
+            //- .col#1 
+            //-   .image: img(src="imgs/team/3.jpg", alt="Doctor")
+            //-   .text 
+            //-     h4: a(href="/doctors/doctor-details") Thomas Henry
+            //-     p Cardiology 
+            //- .col#1 
+            //-   .image: img(src="imgs/team/4.jpg", alt="Doctor")
+            //-   .text 
+            //-     h4: a(href="/doctors/doctor-details") HarissonThomas
+            //-     p Traumatology
+            //- .col#1 
+            //-   .image: img(src="imgs/team/1.jpg", alt="Doctor")
+            //-   .text 
+            //-     h4: a(href="/doctors/doctor-details") Jonas Thomson
+            //-     p Cardiology 
+            //- .col#1 
+            //-   .image: img(src="imgs/team/2.jpg", alt="Doctor")
+            //-   .text 
+            //-     h4: a(href="/doctors/doctor-details") Henry Forth
+            //-     p hematology
+            //- .col#1 
+            //-   .image: img(src="imgs/team/3.jpg", alt="Doctor")
+            //-   .text 
+            //-     h4: a(href="/doctors/doctor-details") Thomas Henry
+            //-     p Dental
+            //- .col

@@ -1,0 +1,60 @@
+mixin cta-page
+  section.cta-page 
+    .container 
+      .col
+        .divider
+        h2.title-color We are pleased to offer you the #[span chance to have the healthy]
+        |
+        |
+        a(href="#" class="primary-btn") get appoinment #[i.icofont-simple-right]
+
+mixin awardsAndServices(title, imageURL, link)
+  .col 
+    .card 
+      .image: img(src=imageURL, alt="Service") 
+      .text
+        h4 #{title}
+        p Saepe nulla praesentium eaque omnis perferendis a doloremque.
+        - if(link)
+          a(href="/departments/department-details") Learn More #[i.icofont-simple-right] 
+mixin bookAppoinment 
+  .col 
+    .title 
+      h2.title-color Book appoinment
+      p Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.
+    form(action="" method="POST")
+      .box
+        .col 
+          select#department(name="department")
+            option(value="0") Choose Department  
+            option(value="1") Software Design 
+            option(value="2") Development cycle 
+            option(value="3") Software Development  
+            option(value="4") Maintenance
+            option(value="5") Process Query
+            option(value="6") Cost and Duration
+            option(value="7") Modal Delivery
+        .col
+          select#doctors(name="doctors")
+            option(value="0") Choose Department  
+            option(value="1") Software Design 
+            option(value="2") Development cycle 
+            option(value="3") Software Development  
+            option(value="4") Maintenance
+            option(value="5") Process Query
+            option(value="6") Cost and Duration
+            option(value="7") Modal Delivery
+        .col: input(type="date", name="date")
+        .col: input(type="text", name="time" placeholder="Time")
+        .col: input(type="text", name="full-name" placeholder="Full Name")
+        .col: input(type="text", name="phone" placeholder="Phone")
+      .box 
+        textarea#message(name="msg", cols="30", rows="10" placeholder="Your message")
+      a(href="#").primary-btn.fill make appoinment <i class="icofont-thin-right ml-2"></i>
+//- SP => Professional specialization
+mixin doctor(name, imageURL, SP, id)
+  .col(id=id)
+    .image: img(src=imageURL, alt="Doctor")
+    .text 
+      h4: a(href="/doctors/doctor-details")=name
+      p=SP

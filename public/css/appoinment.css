@@ -1,0 +1,42 @@
+.appoinment .container>.col:first-of-type {
+  max-width: 380px;
+}
+
+.appoinment .icon {
+  margin-bottom: 16px;
+}
+
+.appoinment .icon i {
+  font-size: 50px;
+}
+
+.appoinment h3 {
+  color: #222;
+  font-size: 24px;
+  font-family: var(--ff-exo);
+}
+
+.appoinment h2 {
+  color: var(--sc);
+  font-size: 44px;
+  font-family: var(--ff-exo);
+  margin: 16px 0 8px;
+}
+
+.appoinment .form {
+  padding-left: 48px;
+}
+
+@media (max-width: 991px) {
+  .appoinment .col {
+    padding: 0;
+  }
+
+  .appoinment .container {
+    flex-direction: column;
+  }
+
+  .appoinment .form {
+    padding: 0;
+  }
+}

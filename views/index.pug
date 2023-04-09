@@ -1,0 +1,220 @@
+include ./includes/mixins
+
+doctype html
+html
+  head
+   include ./includes/head
+  body
+    //- header included
+    include ./includes/header
+    section.banner
+      .container 
+        .text 
+          .divider
+          |
+          |
+          span total health care solution
+          h1 your most trusted health partner
+          p A repudiandae ipsam labore ipsa voluptatum quidem quae laudantium quisquam aperiam maiores sunt fugit, deserunt rem suscipit placeat.
+          |
+          |
+          a(href="#", class="primary-btn") make appoinment <i class="icofont-thin-right ml-2"></i>
+    section.features 
+      .container
+        .box
+          .card
+            .icon 
+              i.icofont-surgeon-alt
+            span 24 Hours Service
+            h4 Online Appoinment
+            p Get ALl time support for emergency.We have introduced the principle of family medicine.
+            a.primary-btn.fill(href="#")  make an appoinment
+        .box
+          .card 
+            .icon 
+              i.icofont-ui-clock
+            span Timing schedule
+            h4 Working Hours
+            ul 
+              li
+                | Sun - Wed :
+                span 8:00-17:00
+              li
+                | Thu - Fri :
+                span 9:00-17:00
+              li
+                | Sat - sun :
+                span 10:00-17:00
+        .box
+          .card 
+            .icon 
+              i.icofont-support
+            span Emergency Cases
+            h4 1-800-700-6200
+            p Get ALl time support for emergency.We have introduced the principle of family medicine.Get Conneted with us for any urgency .
+
+    section.about 
+      .container 
+        .items 
+          .item.col
+            img(src="imgs/about/img-1.jpg", alt="image")
+            img(src="imgs/about/img-2.jpg", alt="image")
+          .item.col: img(src="imgs/about/img-3.jpg", alt="image")
+          .item.text 
+            h2.title-color Personal Care & healthy living
+            p We provide best leading medicle service Nulla perferendis veniam deleniti ipsum officia dolores repellat laudantium obcaecati neque.
+            a(href="/services" class="primary-btn") services <i class="icofont-thin-right"></i>
+    section.cta  
+      .container 
+        .col  
+          .counter-state
+            i.icofont-doctor
+            span(class="counter", data-val="58") 0
+            p Happy People 
+        .col
+          .counter-state
+            i.icofont-flag
+            span(class="counter", data-val="700") 0
+            p Surgery Completed
+        .col
+          .counter-state
+            i.icofont-badge
+            span(class="counter", data-val="40") 0
+            p Expert Doctors
+        .col
+          .counter-state
+            i.icofont-globe
+            span(class="counter", data-val="20") 0
+            p Worldwide Branch
+    section.services 
+      .container
+        .main-title
+          h2 Award winning patient care
+          .divider 
+          p Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.
+        .items 
+          .col
+            .item 
+              .title
+                i.icofont-laboratory
+                h4 Laboratory services
+              p Saepe nulla praesentium eaque omnis perferendis a doloremque.
+          .col
+            .item 
+              .title
+                i.icofont-heart-beat-alt
+                h4 Heart Disease
+              p Saepe nulla praesentium eaque omnis perferendis a doloremque.
+          .col
+            .item 
+              .title
+                i.icofont-tooth
+                h4 Dental Care
+              p Saepe nulla praesentium eaque omnis perferendis a doloremque.
+          .col
+            .item 
+              .title
+                i.icofont-crutch
+                h4 Body Surgery
+              p Saepe nulla praesentium eaque omnis perferendis a doloremque.
+          .col
+            .item 
+              .title
+                i.icofont-brain-alt
+                h4 Neurology Sargery
+              p Saepe nulla praesentium eaque omnis perferendis a doloremque.
+          .col
+            .item 
+              .title
+                i.icofont-dna-alt-1
+                h4 Gynecology
+              p Saepe nulla praesentium eaque omnis perferendis a doloremque.
+    section.appoinment 
+      .container 
+        .col 
+          .image
+            img(src="imgs/about/img-3.jpg", alt="img")
+            .emergency
+              i.icofont-phone-circle 
+              h2 +23 345 67980
+        +bookAppoinment
+    section.testimonial 
+      .container 
+        .main-title
+          h2 We saved over 5000+ Patients
+          .divider 
+          p Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.
+        .swiper.testimonial-swiper
+          .swiper-wrapper 
+            .swiper-slide
+              .user 
+                img(src="imgs/team/1.jpg", alt="user-pic")
+                .user-details 
+                  h4 Amazing service!
+                  span John Partho
+              p They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+              i.icofont-quote-right 
+            .swiper-slide
+              .user 
+                img(src="imgs/team/2.jpg", alt="user-pic")
+                .user-details 
+                  h4 Expert doctors!
+                  span Mullar Sarth
+              p They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+              i.icofont-quote-right 
+            .swiper-slide
+              .user 
+                img(src="imgs/team/3.jpg", alt="user-pic")
+                .user-details 
+                  h4 Good Support!
+                  span Kolis Mullar
+              p They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+              i.icofont-quote-right
+            .swiper-slide
+              .user 
+                img(src="imgs/team/4.jpg", alt="user-pic")
+                .user-details 
+                  h4 Nice Environment!
+                  span Partho Sarothi
+              p They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+              i.icofont-quote-right
+            .swiper-slide
+              .user 
+                img(src="imgs/team/1.jpg", alt="user-pic")
+                .user-details 
+                  h4 Nice Environment!
+                  span Partho Sarothi
+              p They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+              i.icofont-quote-right
+            .swiper-slide
+              .user 
+                img(src="imgs/team/2.jpg", alt="user-pic")
+                .user-details 
+                  h4 Modern service!
+                  span Kolis Mullar
+              p They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+              i.icofont-quote-right
+          .swiper-pagination
+    section.clients 
+      .container 
+        .main-title
+          h2 Partners who support us
+          .divider 
+          p Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.
+        .swiper.client-swiper
+          .swiper-wrapper 
+            .swiper-slide 
+              .col: img(src="imgs/client/1.png", alt="client")
+            .swiper-slide 
+              .col: img(src="imgs/client/2.png", alt="client")
+            .swiper-slide 
+              .col: img(src="imgs/client/3.png", alt="client")
+            .swiper-slide 
+              .col: img(src="imgs/client/4.png", alt="client")
+            .swiper-slide 
+              .col: img(src="imgs/client/5.png", alt="client")
+            .swiper-slide 
+              .col: img(src="imgs/client/6.png", alt="client")
+    include ./includes/footer
+    include ./includes/scripts
+    script(src="js/cta.js") 

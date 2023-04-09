@@ -1,0 +1,20 @@
+include ./includes/mixins
+
+doctype html 
+html 
+  head 
+    include ./includes/head
+    link(rel="stylesheet", href="css/appoinment.css")
+  body 
+    include ./includes/header
+    include ./includes/banner
+    section.appoinment 
+      .container 
+        .col 
+          .icon: i.icofont-support
+          h3 Call for an Emergency Service!
+          h2 +84 789 1256
+        .form 
+          +bookAppoinment
+    include ./includes/footer
+    include ./includes/scripts 

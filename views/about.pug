@@ -1,0 +1,117 @@
+doctype html 
+html 
+  head 
+    include ./includes/head
+    link(rel="stylesheet", href="css/about.css")
+  body 
+    include ./includes/header
+    include ./includes/banner
+    section.about-page 
+      .container  
+        .col
+          h2.title-color Personal care for your healthy living 
+        .col
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, quod laborum alias. Vitae dolorum, officia sit! Saepe ullam facere at, consequatur incidunt, quae esse, quis ut reprehenderit dignissimos, libero delectus.
+          img(src="imgs/about/sign.png", alt="sign")
+    section.feature-page
+      .container 
+        .col 
+          .card 
+            .image: img(src="imgs/about/about-1.jpg", alt="about-pic")
+            .text 
+              h4 Healthcare for Kids
+              p Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium .
+        .col 
+          .card 
+            .image: img(src="imgs/about/about-2.jpg", alt="about-pic")
+            .text 
+              h4 Medical Counseling
+              p Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium .
+        .col 
+          .card 
+            .image: img(src="imgs/about/about-3.jpg", alt="about-pic")
+            .text 
+              h4 Modern Equipments
+              p Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium .
+        .col 
+          .card 
+            .image: img(src="imgs/about/about-4.jpg", alt="about-pic")
+            .text 
+              h4 Qualified Doctors
+              p Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium .
+    section.awards 
+      .container 
+        .col 
+          h2.title-color Our Doctors achievements
+          .divider 
+        .award-clients 
+          .col: .image: img(src="imgs/client/1.png", alt="Award")
+          .col: .image: img(src="imgs/client/2.png", alt="Award")
+          .col: .image: img(src="imgs/client/3.png", alt="Award")
+          .col: .image: img(src="imgs/client/4.png", alt="Award")
+          .col: .image: img(src="imgs/client/5.png", alt="Award")
+          .col: .image: img(src="imgs/client/6.png", alt="Award")
+    section.doctors-team
+      .container 
+        .col 
+          .card 
+            .image: img(src="imgs/team/1.jpg", alt="doctor-pic")
+            .text 
+              h4: a(href="/doctors/doctor-details") John Marshal
+              p Internist, Emergency Physician
+        .col 
+          .card 
+            .image: img(src="imgs/team/2.jpg", alt="doctor-pic")
+            .text 
+              h4: a(href="/doctors/doctor-details") Marshal Root
+              p Surgeon, Сardiologist
+        .col 
+          .card 
+            .image: img(src="imgs/team/3.jpg", alt="doctor-pic")
+            .text 
+              h4: a(href="/doctors/doctor-details") Siamon john
+              p Internist, General Practitioner
+        .col 
+          .card 
+            .image: img(src="imgs/team/4.jpg", alt="doctor-pic")
+            .text 
+              h4: a(href="/doctors/doctor-details") Rishat Ahmed
+              p Orthopedic Surgeon
+    .testimonial
+      .container 
+        .bg
+        .text.col
+          .title.col
+            h2.title-color What thay say about us
+            .divider
+          .col 
+            .swiper.aboutSwiper 
+              .swiper-wrapper 
+                .swiper-slide 
+                  .client-info 
+                    h4 Amazing service!
+                    span John Partho
+                  p They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat. Quibusdam laboriosam eveniet nostrum nemo commodi numquam quod.
+                .swiper-slide 
+                  .client-info 
+                    h4 Expert doctors!
+                    span Mullar Sarth
+                  p They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat. Quibusdam laboriosam eveniet nostrum nemo commodi numquam quod.
+                .swiper-slide 
+                  .client-info 
+                    h4 Good Support!
+                    span Partho Sarothi
+                  p They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat. Quibusdam laboriosam eveniet nostrum nemo commodi numquam quod.
+                .swiper-slide 
+                  .client-info 
+                    h4 Nice Environment!
+                    span Partho Sarothi
+                  p They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat. Quibusdam laboriosam eveniet nostrum nemo commodi numquam quod.
+                .swiper-slide 
+                  .client-info 
+                    h4 Modern Service!
+                    span Kolis Mullar
+                  p They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat. Quibusdam laboriosam eveniet nostrum nemo commodi numquam quod.
+              .swiper-pagination
+    include ./includes/footer
+    include ./includes/scripts

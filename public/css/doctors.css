@@ -1,0 +1,72 @@
+@import url(./root.css);
+
+.doctors {
+  padding: 100px 0;
+}
+
+.doctors .control ul {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 48px;
+}
+
+.doctors .control ul li {
+  margin: 0 2px;
+  padding: 10px 24px;
+  transition: all .3s ease;
+  border-radius: 5px;
+  color: #222;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.doctors .control ul li:hover,
+.selected {
+  color: #fff !important;
+  background: var(--mc);
+}
+
+.doctors .box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.doctors .box .col {
+  flex: 25%;
+}
+
+.doctors .box .col .image {
+  width: fit-content;
+  position: relative;
+  overflow: hidden;
+}
+
+.doctors .box .col .image img {
+  width: 100%;
+  height: auto;
+  margin-bottom: -8px;
+  transition: all .3s ease;
+}
+
+.doctors .box .col .image:hover img {
+  scale: 1.1;
+}
+
+.doctors .box .col .text {
+  margin-top: 16px;
+}
+
+.doctors .box .col .text h4 a {
+  font-size: 20px;
+  color: #222;
+  font-family: var(--ff-exo);
+  transition: all .3s ease;
+}
+
+.doctors .box .col .text h4 a:hover {
+  color: var(--mc);
+}
+
+.doctors .box .col .text p {
+  margin-bottom: 16px;
+}

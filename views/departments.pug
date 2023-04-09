@@ -1,0 +1,24 @@
+include ./includes/mixins
+
+doctype html 
+html 
+  head 
+    include ./includes/head
+    link(rel="stylesheet", href="css/services.css")
+  body 
+    include ./includes/header
+    include ./includes/banner
+    section.service-1 
+      .main-title 
+        h2 Award winning patient care
+        .divider 
+        p Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.
+      .container
+        +awardsAndServices("Child Care", "./imgs/department/1.jpg", true)
+        +awardsAndServices("Cardiology", "./imgs/department/2.jpg", true)
+        +awardsAndServices("Dental Care", "./imgs/department/3.jpg", true)
+        +awardsAndServices("Opthomology", "./imgs/department/4.jpg", true)
+        +awardsAndServices("Pulmology", "./imgs/department/5.jpg", true)
+        +awardsAndServices("Gynecology", "./imgs/department/6.jpg", true)
+    include ./includes/footer
+    include ./includes/scripts
