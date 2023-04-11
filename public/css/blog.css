@@ -1,0 +1,224 @@
+@import url(./root.css);
+
+.blog {
+  padding: 100px 0;
+}
+
+.blog .container {
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .blog .container {
+    flex-direction: column;
+  }
+}
+
+.blog .container>.col:first-of-type {
+  flex: 67.7%;
+}
+
+.blog .container>.col:last-of-type {
+  flex: 33.3%;
+  padding-left: 39px;
+}
+
+@media (max-width: 991px) {
+  .blog .container>.col:last-of-type {
+    margin-top: 50px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog .col {
+    padding: 0 !important;
+  }
+}
+
+.blog .container article {
+  margin-bottom: 48px;
+}
+
+.blog .container img {
+  width: 100%;
+}
+
+.blog .container .blog-details {
+  margin: 24px 0 16px;
+}
+
+
+.blog .container .blog-details span {
+  margin-right: 16px;
+}
+
+
+.blog .container .blog-details span i {
+  margin-right: 8px;
+}
+
+.blog .container article h2 a {
+  margin: 16px 0;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 46px;
+  color: #222;
+  font-family: var(--ff-exo);
+  display: block;
+  transition: all .2s ease;
+}
+
+.blog .container article h2 a:hover {
+  color: var(--mc);
+}
+
+.blog .container article p {
+  margin-bottom: 24px;
+}
+
+.blog .container nav {
+  display: block !important;
+}
+
+.blog .container nav span {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  background: #eee;
+  border-radius: 50%;
+  color: #222;
+  margin-right: 16px;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.in,
+.container nav span:hover {
+  background: var(--sc) !important;
+  color: #fff !important;
+}
+
+.blog .container .col:last-of-type>div {
+  margin-bottom: 50px;
+}
+
+.blog .container .col .title {
+  margin-bottom: 30px;
+}
+
+.blog .container .col .title h5 {
+  font-size: 20px;
+  color: #222;
+  font-family: var(--ff-exo);
+}
+
+.blog .container .col .title .divider {
+  height: 3px;
+  width: 35px;
+  margin-top: 15px;
+}
+
+.blog .container .col .search input {
+  border: 1px solid #ced4da;
+  padding: 6px 12px;
+  height: 45px;
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+  transition: all .2s ease;
+}
+
+.blog .container .col .search input:focus {
+  border-color: var(--sc);
+}
+
+.blog .container .col .posts>div {
+  padding: 8px 0;
+}
+
+.blog .container .col .posts>div span {
+  font-size: 14px;
+}
+
+.blog .container .col .posts>div a {
+  color: #222;
+  font-size: 16px;
+  font-family: var(--ff-exo);
+  transition: all .2s ease;
+  display: block;
+  margin: 8px 0;
+}
+
+.blog .container .col .posts>div a:hover {
+  color: var(--mc);
+}
+
+.blog .container .categories ul li {
+  margin-bottom: 10px;
+}
+
+.blog .container .categories ul li a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #222;
+}
+
+.blog .container .col .categories a:hover {
+  color: var(--mc);
+}
+
+.blog .container .categories ul li span {
+  color: var(--tc);
+}
+
+.blog .container .tags a {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  line-height: 41px;
+  height: 41px;
+  font-weight: 500;
+  border-radius: 20px;
+  color: #666;
+  display: inline-block;
+  background-color: #eff0f3;
+  margin: 0 7px 10px 0;
+  padding: 0 25px;
+  transition: all .2s ease;
+}
+
+.blog .container .tags a:hover {
+  background: var(--sc);
+  color: #fff;
+}
+
+.blog .container .time {
+  padding: 25px;
+  margin-bottom: 16px;
+  background: #f4f9fc;
+}
+
+.blog .container .time ul {
+  margin-bottom: 16px;
+}
+
+.blog .container .time ul li {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+
+.blog .container .time p {
+  line-height: 30px;
+}
+
+.blog .container .time h3 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 8px;
+  font-family: var(--ff-exo);
+}

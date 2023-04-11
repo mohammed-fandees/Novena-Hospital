@@ -13,7 +13,7 @@
 .doctors .control ul li {
   margin: 0 2px;
   padding: 10px 24px;
-  transition: all .3s ease;
+  transition: all .2s ease;
   border-radius: 5px;
   color: #222;
   font-size: 16px;
@@ -45,7 +45,7 @@
   width: 100%;
   height: auto;
   margin-bottom: -8px;
-  transition: all .3s ease;
+  transition: all .2s ease;
 }
 
 .doctors .box .col .image:hover img {
@@ -60,7 +60,7 @@
   font-size: 20px;
   color: #222;
   font-family: var(--ff-exo);
-  transition: all .3s ease;
+  transition: all .2s ease;
 }
 
 .doctors .box .col .text h4 a:hover {

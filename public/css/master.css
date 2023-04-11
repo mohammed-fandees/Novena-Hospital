@@ -150,7 +150,7 @@ p {
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 50px;
-  transition: all .3s ease;
+  transition: all .2s ease;
   display: block;
   width: fit-content;
 }
@@ -292,7 +292,7 @@ nav {
   color: #222;
   text-decoration: none;
   font-weight: 600;
-  transition: all .3s ease;
+  transition: all .2s ease;
   cursor: pointer;
 }
 
@@ -334,7 +334,7 @@ nav {
   font-weight: 500;
   color: #555;
   display: block;
-  transition: all .3s ease;
+  transition: all .2s ease;
   border-bottom: 1px solid #eee;
 }
 
@@ -833,7 +833,7 @@ textarea {
   outline: none;
   resize: vertical;
   width: 100%;
-  transition: all .3s ease;
+  transition: all .2s ease;
 }
 
 .appoinment .box select:focus,
@@ -1032,7 +1032,7 @@ footer .footer-top div:not(.footer-about) ul li {
 
 footer .footer-top div:not(.footer-about) ul li a {
   color: var(--tc);
-  transition: all .3s ease;
+  transition: all .2s ease;
 }
 
 footer .footer-top div:not(.footer-about) ul li a:hover {
@@ -1049,7 +1049,7 @@ footer .footer-top .connect a {
   font-size: 20px;
   font-weight: 700;
   color: #222;
-  transition: all .3s ease;
+  transition: all .2s ease;
   font-family: var(--ff-exo);
   display: block;
   margin: 8px 0;

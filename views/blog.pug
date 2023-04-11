@@ -1,10 +1,86 @@
+include ./includes/mixins
+
 doctype html 
 html 
   head 
     include ./includes/head
-    link(rel="stylesheet", href="css/about.css")
+    link(rel="stylesheet", href="css/blog.css")
   body 
     include ./includes/header
     include ./includes/banner
+    section.blog
+      .container 
+        .col
+          +article("Choose quality service over cheap service all type of things", "imgs/blog/blog-1.jpg")
+          +article("All test cost 25% in always in our laboratory", "imgs/blog/blog-2.jpg")
+          +article("Get Free consulation from our special surgeon and doctors", "imgs/blog/blog-3.jpg")
+          nav
+            span.in 1
+            span 2
+            span 3
+            span: i.icofont-thin-double-right
+        .col
+          .search 
+            .title
+              h5 Search Here
+              .divider
+            form: input(type="text" id="srch" placeholder="search")
+          .posts 
+            .title 
+              h5 Popular Posts
+              .divider
+            +post("Thoughtful living in los Angeles")
+            +post("Vivamus molestie gravida turpis.")
+            +post("Fusce lobortis lorem at ipsum semper sagittis")
+          .categories
+            .title
+              h5 Categories
+              .divider 
+            ul 
+              li
+                a(href="#") Medicine
+                span (14)
+              li
+                a(href="#") Equipments
+                span (2)
+              li
+                a(href="#") Heart 
+                span (10)
+              li 
+                a(href="#") Free counselling 
+                span (5)
+              li
+                a(href="#") Lab test 
+                span (5)
+          .tags 
+            .title 
+              h5 Tags
+              .divider 
+            div 
+              a(href="#") doctors  
+              a(href="#") agency  
+              a(href="#") company  
+              a(href="#") medicine  
+              a(href="#") surgery  
+              a(href="#") marketing  
+              a(href="#") social media  
+              a(href="#") branding  
+              a(href="#") laboratory
+          .time 
+            .title
+              h5 Time Schedule 
+              .divider 
+            ul 
+              li 
+                span Monday - Friday 
+                span 9:00 - 17:00
+              li
+                span Saturday
+                span 9:00 - 16:00
+              li 
+                span Sunday 
+                span Closed
+            p Need Urgent Help?
+            h3 +23-4565-65768
     include ./includes/footer
     include ./includes/scripts

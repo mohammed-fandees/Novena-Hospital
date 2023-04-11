@@ -51,7 +51,7 @@
 
 .service-1 a {
   color: var(--sc);
-  transition: all .3s ease;
+  transition: all .2s ease;
 }
 
 .service-1 a:hover {

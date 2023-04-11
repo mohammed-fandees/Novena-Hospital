@@ -1,7 +1,7 @@
 const express = require("express");
 const browserSync = require("browser-sync");
 const app = express();
-const port = 4040;
+const port = 8080;
 const dataRecuest = require("./public/data/data.json");
 const { title } = require("process");
 const data = dataRecuest.features;
@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/home", (req, res) => {
-  res.render("home");
+  res.render("index");
 });
 
 app.get("/about", (req, res) => {

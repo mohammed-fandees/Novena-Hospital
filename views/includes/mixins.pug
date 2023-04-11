@@ -51,10 +51,31 @@ mixin bookAppoinment
       .box 
         textarea#message(name="msg", cols="30", rows="10" placeholder="Your message")
       a(href="#").primary-btn.fill make appoinment <i class="icofont-thin-right ml-2"></i>
-//- SP => Professional specialization
-mixin doctor(name, imageURL, SP, id)
+
+mixin doctor(name, imageURL, specialization, id)
   .col(id=id)
     .image: img(src=imageURL, alt="Doctor")
     .text 
-      h4: a(href="/doctors/doctor-details")=name
-      p=SP
+      h4: a(href="/doctors/doctor-details") #{name}
+      p #{specialization}
+
+mixin article(title, imageURL)
+  article
+    .image: img(src=imageURL, alt="Blog Image")
+    .text
+      .blog-details
+        span
+          i.icofont-comment
+          | 5 Comments
+        span
+          i.icofont-calendar
+          | 28th January
+      .blog-text 
+        h2: a(href="/blog/blog-details") #{title}
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aliquid architecto facere commodi cupiditate omnis voluptatibus inventore atque velit cum rem id assumenda quam recusandae ipsam ea porro, dicta ad.
+        a(href="/blog/blog-details" class="primary-btn fill") read more #[i.icofont-simple-right]
+
+mixin post(title)
+  div
+    span 03 Mar 2018
+    h6: a(href="#") #{title}
